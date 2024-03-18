@@ -42,6 +42,8 @@ local serv = win:Server("Discord", "")
 local Main = serv:Channel("General")
 
 Main:Toggle("Enable Kaitun",false, function(vu)
+	_G.Start_Kaitun = vu
+	_G.AutoFarmFast = vu
 	_G.Auto_Farm_Level = vu
 	_G.AutoBuyLegendarySword = vu
 end)
